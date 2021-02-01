@@ -16,8 +16,8 @@ namespace Mediapipe {
     /// <remarks>
     ///   In <paramref name="point" />, y-axis is oriented from top to bottom.
     /// </remarks>
-    public void Draw(Transform screenTransform, NormalizedLandmark point, bool isFlipped = false, float scale = 0.5f) {
-      gameObject.transform.position = GetPosition(screenTransform, point, isFlipped);
+    public void Draw(Transform screenTransform, NormalizedLandmark point, bool isFlipped = false, bool isFiltered = false, float scale = 0.5f) {
+      gameObject.transform.position = GetPosition(screenTransform, point, isFlipped, isFiltered);
       gameObject.transform.localScale = scale * Vector3.one;
     }
 
@@ -31,8 +31,8 @@ namespace Mediapipe {
     /// <remarks>
     ///   In <paramref name="point" />, y-axis is oriented from top to bottom.
     /// </remarks>
-    public void Draw(Transform screenTransform, LocationData.Types.RelativeKeypoint point, bool isFlipped = false, float scale = 0.3f) {
-      gameObject.transform.position = GetPosition(screenTransform, point, isFlipped);
+    public void Draw(Transform screenTransform, LocationData.Types.RelativeKeypoint point, bool isFlipped = false, bool isFiltered = false, float scale = 0.3f) {
+      gameObject.transform.position = GetPosition(screenTransform, point, isFlipped, isFiltered);
       gameObject.transform.localScale = scale * Vector3.one;
     }
   }

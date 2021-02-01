@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System;
 
 using Edge = System.Tuple<int ,int>;
 
 namespace Mediapipe {
-  public abstract class LandmarkListAnnotationController : AnnotationController {
+  public abstract class LandmarkListAnnotationController : AnnotationController
+    {
     [SerializeField] protected GameObject nodePrefab = null;
     [SerializeField] protected GameObject edgePrefab = null;
     [SerializeField] protected float NodeScale = 0.5f;
@@ -55,7 +57,7 @@ namespace Mediapipe {
     /// <remarks>
     ///   In <paramref name="landmarkList" />, y-axis is oriented from top to bottom.
     /// </remarks>
-    public void Draw(Transform screenTransform, NormalizedLandmarkList landmarkList, bool isFlipped = false) {
+    public void Draw(Transform screenTransform, NormalizedLandmarkList landmarkList, bool isFlipped = false, bool isFiltered = false) {
       if (isEmpty(landmarkList)) {
         Clear();
         return;
@@ -65,7 +67,7 @@ namespace Mediapipe {
         var landmark = landmarkList.Landmark[i];
         var node = Nodes[i];
 
-        node.GetComponent<NodeAnnotationController>().Draw(screenTransform, landmark, isFlipped, NodeScale);
+        node.GetComponent<NodeAnnotationController>().Draw(screenTransform, landmark, isFlipped, isFiltered, NodeScale);
       }
 
       for (var i = 0; i < EdgeSize; i++) {

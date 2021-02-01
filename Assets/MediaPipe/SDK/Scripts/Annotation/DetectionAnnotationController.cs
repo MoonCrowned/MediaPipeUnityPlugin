@@ -51,8 +51,8 @@ namespace Mediapipe {
       DrawRelativeKeypoints(screenTransform, detection.LocationData.RelativeKeypoints, isFlipped);
     }
 
-    private void DrawRectAndLabel(Transform screenTransform, Detection detection, bool isFlipped = false) {
-      var positions = GetPositions(screenTransform, detection.LocationData.RelativeBoundingBox, isFlipped);
+    private void DrawRectAndLabel(Transform screenTransform, Detection detection, bool isFlipped = false, bool isFiltered = false) {
+      var positions = GetPositions(screenTransform, detection.LocationData.RelativeBoundingBox, isFlipped, isFiltered);
 
       gameObject.GetComponent<LineRenderer>().SetPositions(positions);
 

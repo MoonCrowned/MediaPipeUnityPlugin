@@ -18,8 +18,8 @@ namespace Mediapipe {
     /// <remarks>
     ///   In <paramref name="rect" />, y-axis is oriented from top to bottom.
     /// </remarks>
-    public void Draw(Transform screenTransform, NormalizedRect rect, bool isFlipped = false) {
-      var positions = GetPositions(screenTransform, rect, isFlipped);
+    public void Draw(Transform screenTransform, NormalizedRect rect, bool isFlipped = false, bool isFiltered = false) {
+      var positions = GetPositions(screenTransform, rect, isFlipped, isFiltered);
 
       gameObject.GetComponent<LineRenderer>().SetPositions(positions);
     }

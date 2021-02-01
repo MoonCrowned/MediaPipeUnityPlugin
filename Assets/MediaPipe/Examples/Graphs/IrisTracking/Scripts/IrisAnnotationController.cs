@@ -50,7 +50,7 @@ public class IrisAnnotationController : AnnotationController {
       var landmark = landmarks[i];
       var node = nodes[i];
 
-      node.GetComponent<NodeAnnotationController>().Draw(screenTransform, landmark, isFlipped, 0.3f);
+      node.GetComponent<NodeAnnotationController>().Draw(screenTransform, landmark, isFlipped, false, 0.3f);
     }
 
     DrawIrisCircle(screenTransform, landmarks, isFlipped);

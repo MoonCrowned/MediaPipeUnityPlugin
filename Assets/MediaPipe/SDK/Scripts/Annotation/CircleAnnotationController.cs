@@ -25,8 +25,8 @@ namespace Mediapipe {
     /// <remarks>
     ///   In <paramref name="center" />, y-axis is oriented from top to bottom.
     /// </remarks>
-    public void Draw(Transform screenTransform, NormalizedLandmark center, float r, bool isFlipped = false) {
-      var centerPos = GetPosition(screenTransform, center, isFlipped);
+    public void Draw(Transform screenTransform, NormalizedLandmark center, float r, bool isFlipped = false, bool isFiltered = false) {
+      var centerPos = GetPosition(screenTransform, center, isFlipped, isFiltered);
       var startPosRel = new Vector3(r, 0, 0);
       var positions = new Vector3[PositionSize];
 

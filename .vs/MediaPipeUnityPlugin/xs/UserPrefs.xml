@@ -1,0 +1,71 @@
+﻿<Properties StartupConfiguration="{335DE5CF-B7B0-35DA-408F-35BCCFACED03}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MediaPipe/SDK/Scripts/Annotation/AnnotationController.cs">
+    <Files>
+      <File FileName="Assets/Moon/HandTrackingFiltered/Scripts/HandTrackingFilterController.cs" Line="49" Column="64" />
+      <File FileName="Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingGraph.cs" Line="99" Column="77" />
+      <File FileName="Assets/MediaPipe/Examples/Scripts/DemoGraph.cs" Line="8" Column="65" />
+      <File FileName="Assets/MediaPipe/Examples/Scripts/IDemoGraph.cs" Line="4" Column="18" />
+      <File FileName="Assets/MediaPipe/Examples/Scripts/ResourceManager/TextureFrame.cs" Line="6" Column="14" />
+      <File FileName="Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/HandTrackingValue.cs" Line="4" Column="7" />
+      <File FileName="Assets/MediaPipe/SDK/Scripts/Annotation/NodeAnnotationController.cs" Line="20" Column="44" />
+      <File FileName="Assets/MediaPipe/SDK/Scripts/Annotation/EdgeAnnotationController.cs" Line="23" Column="96" />
+      <File FileName="Assets/MediaPipe/SDK/Scripts/Annotation/AnnotationController.cs" Line="46" Column="81" />
+      <File FileName="Assets/Moon/HandTrackingFiltered/Scripts/MyHandAnnotationController.cs" Line="39" Column="101" />
+      <File FileName="Assets/Moon/HandTrackingFiltered/Scripts/IFilterableAnnotation.cs" Line="1" Column="39" />
+      <File FileName="Assets/MediaPipe/SDK/Scripts/Annotation/HandLandmarkListAnnotationController.cs" Line="6" Column="69" />
+      <File FileName="Assets/MediaPipe/SDK/Scripts/Annotation/LandmarkListAnnotationController.cs" Line="60" Column="125" />
+      <File FileName="Assets/MediaPipe/SDK/Scripts/Annotation/DetectionAnnotationController.cs" Line="58" Column="1" />
+      <File FileName="Assets/MediaPipe/SDK/Scripts/Annotation/RectAnnotationController.cs" Line="22" Column="80" />
+      <File FileName="Assets/MediaPipe/SDK/Scripts/Annotation/CircleAnnotationController.cs" Line="29" Column="81" />
+      <File FileName="Assets/MediaPipe/Examples/Graphs/IrisTracking/Scripts/IrisAnnotationController.cs" Line="53" Column="103" />
+      <File FileName="Assets/MediaPipe/Examples/Graphs/HandTracking/Scripts/MultiHandLandmarkListAnnotationController.cs" Line="13" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MediaPipeUnityPlugin" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="MediaPipe" expanded="True">
+                <Node name="Examples" expanded="True">
+                  <Node name="Graphs" expanded="True">
+                    <Node name="HandTracking" expanded="True">
+                      <Node name="Scripts" expanded="True" />
+                    </Node>
+                    <Node name="HelloWorld" expanded="True">
+                      <Node name="Scripts" expanded="True" />
+                    </Node>
+                    <Node name="IrisTracking" expanded="True">
+                      <Node name="Scripts" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Scripts" expanded="True">
+                    <Node name="ResourceManager" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="SDK" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="Annotation" expanded="True">
+                      <Node name="AnnotationController.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Moon" expanded="True">
+                <Node name="HandTrackingFiltered" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e1612a39-a0b6-4f86-9214-fd8b7614d012" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

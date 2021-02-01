@@ -1,8 +1,10 @@
 using Mediapipe;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class HandTrackingAnnotationController : AnnotationController {
+public class HandTrackingAnnotationController : AnnotationController, IDrawableHandGraph
+{
   [SerializeField] GameObject handLandmarkListsPrefab = null;
   [SerializeField] GameObject palmRectsPrefab = null;
   [SerializeField] GameObject palmDetectionsPrefab = null;

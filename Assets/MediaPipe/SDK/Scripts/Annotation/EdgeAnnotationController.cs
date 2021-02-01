@@ -18,9 +18,9 @@ namespace Mediapipe {
     /// <remarks>
     ///   In <paramref name="point" />, y-axis is oriented from top to bottom.
     /// </remarks>
-    public void Draw(Transform screenTransform, NormalizedLandmark a, NormalizedLandmark b, bool isFlipped = false) {
-      var src = GetPositionFromNormalizedPoint(screenTransform, a.X, a.Y, isFlipped);
-      var dst = GetPositionFromNormalizedPoint(screenTransform, b.X, b.Y, isFlipped);
+    public void Draw(Transform screenTransform, NormalizedLandmark a, NormalizedLandmark b, bool isFlipped = false, bool isFiltered = false) {
+      var src = GetPositionFromNormalizedPoint(screenTransform, a.X, a.Y, isFlipped, isFiltered);
+      var dst = GetPositionFromNormalizedPoint(screenTransform, b.X, b.Y, isFlipped, isFiltered);
 
       Draw(screenTransform, src, dst);
     }

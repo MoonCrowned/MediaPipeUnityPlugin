@@ -98,7 +98,7 @@ public class HandTrackingGraph : DemoGraph {
 
   private void RenderAnnotation(WebCamScreenController screenController, HandTrackingValue value) {
     // NOTE: input image is flipped
-    GetComponent<HandTrackingAnnotationController>().Draw(
+    GetComponent<IDrawableHandGraph>().Draw(
       screenController.transform, value.HandLandmarkLists, value.Handednesses, value.PalmDetections, value.PalmRects, true);
   }
 }
